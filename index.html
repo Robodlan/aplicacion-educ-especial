@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Programa Multisensorial - Dislexia, Disgrafía, Discalculia</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Programa Multisensorial de Apoyo</h1>
+            <p class="subtitle">Herramientas para estudiantes con Dislexia, Disgrafía y Discalculia</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="nav-tabs">
+            <button class="tab-button active" data-tab="dyslexia">Dislexia</button>
+            <button class="tab-button" data-tab="dysgraphia">Disgrafía</button>
+            <button class="tab-button" data-tab="dyscalculia">Discalculia</button>
+            <button class="tab-button" data-tab="settings">Configuración</button>
+        </div>
+        
+        <!-- SECCIÓN DISLEXIA -->
+        <div id="dyslexia" class="tab-content active">
+            <h2 class="section-title">Actividades para Dislexia</h2>
+            <p>Estas actividades están diseñadas para ayudar a estudiantes con dislexia a mejorar su reconocimiento de letras, sílabas y palabras mediante enfoques multisensoriales.</p>
+            
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <h3>Reconocimiento de Letras</h3>
+                    <p>Practica la identificación de letras con apoyo visual y auditivo.</p>
+                    <button class="btn start-activity" data-activity="letter-recognition">Comenzar</button>
+                </div>
+                
+                <div class="activity-card">
+                    <h3>Formación de Sílabas</h3>
+                    <p>Combina letras para formar sílabas con retroalimentación inmediata.</p>
+                    <button class="btn start-activity" data-activity="syllable-formation">Comenzar</button>
+                </div>
+                
+                <div class="activity-card">
+                    <h3>Palabras Completas</h3>
+                    <p>Reconoce y construye palabras completas con apoyo multisensorial.</p>
+                    <button class="btn start-activity" data-activity="word-building">Comenzar</button>
+                </div>
+            </div>
+            
+            <div class="exercise-area" id="dyslexia-exercise" style="display: none;">
+                <h3 id="exercise-title">Ejercicio de Reconocimiento</h3>
+                <div class="word-display" id="target-word">A</div>
+                
+                <div class="options-container" id="options-container">
+                    <!-- Las opciones se generarán dinámicamente -->
+                </div>
+                
+                <div class="feedback" id="feedback" style="display: none;"></div>
+                
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                
+                <button class="btn" id="next-btn" style="display: none;">Siguiente</button>
+            </div>
+        </div>
+        
+        <!-- SECCIÓN DISGRAFÍA -->
+        <div id="dysgraphia" class="tab-content">
+            <h2 class="section-title">Actividades para Disgrafía</h2>
+            <p>Estas actividades ayudan a estudiantes con disgrafía a mejorar su escritura mediante práctica guiada y ejercicios de motricidad fina.</p>
+            
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <h3>Trazo de Letras</h3>
+                    <p>Practica el trazo correcto de letras con guías visuales.</p>
+                    <button class="btn start-activity" data-activity="letter-tracing">Comenzar</button>
+                </div>
+                
+                <div class="activity-card">
+                    <h3>Formación de Palabras</h3>
+                    <p>Construye palabras correctamente con apoyo visual.</p>
+                    <button class="btn start-activity" data-activity="word-formation">Comenzar</button>
+                </div>
+                
+                <div class="activity-card">
+                    <h3>Ortografía Visual</h3>
+                    <p>Mejora la ortografía mediante asociación visual.</p>
+                    <button class="btn start-activity" data-activity="visual-spelling">Comenzar</button>
+                </div>
+            </div>
+            
+            <div class="exercise-area" id="dysgraphia-exercise" style="display: none;">
+                <h3 id="dysgraphia-exercise-title">Ejercicio de Escritura</h3>
+                
+                <div class="word-display" id="writing-prompt">Escribe la palabra: GATO</div>
+                
+                <textarea class="writing-area" id="writing-input" placeholder="Escribe aquí..."></textarea>
+                
+                <button class="btn" id="check-writing">Verificar</button>
+                
+                <div class="feedback" id="writing-feedback" style="display: none;"></div>
+                
+                <button class="btn" id="next-writing" style="display: none;">Siguiente</button>
+            </div>
+        </div>
+        
+        <!-- SECCIÓN DISCALCULIA -->
+        <div id="dyscalculia" class="tab-content">
+            <h2 class="section-title">Actividades para Discalculia</h2>
+            <p>Estas actividades están diseñadas para ayudar a estudiantes con discalculia a comprender conceptos matemáticos básicos mediante representaciones visuales y manipulativas.</p>
+            
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <h3>Reconocimiento de Números</h3>
+                    <p>Identifica números y sus valores con apoyo visual.</p>
+                    <button class="btn start-activity" data-activity="number-recognition">Comenzar</button>
+                </div>
+                
+                <div class="activity-card">
+                    <h3>Operaciones Básicas</h3>
+                    <p>Practica sumas y restas con ayudas visuales.</p>
+                    <button class="btn start-activity" data-activity="basic-operations">Comenzar</button>
+                </div>
+                
+                <div class="activity-card">
+                    <h3>Problemas Visuales</h3>
+                    <p>Resuelve problemas matemáticos con representaciones gráficas.</p>
+                    <button class="btn start-activity" data-activity="visual-problems">Comenzar</button>
+                </div>
+            </div>
+            
+            <div class="exercise-area" id="dyscalculia-exercise" style="display: none;">
+                <h3 id="dyscalculia-exercise-title">Ejercicio Matemático</h3>
+                
+                <div class="math-problem" id="math-problem">3 + 2 = ?</div>
+                
+                <div class="number-pad" id="number-pad">
+                    <!-- Los botones numéricos se generarán dinámicamente -->
+                </div>
+                
+                <div class="feedback" id="math-feedback" style="display: none;"></div>
+                
+                <button class="btn" id="next-math" style="display: none;">Siguiente</button>
+            </div>
+        </div>
+        
+        <!-- SECCIÓN CONFIGURACIÓN -->
+        <div id="settings" class="tab-content">
+            <h2 class="section-title">Configuración de Accesibilidad</h2>
+            <p>Personaliza la experiencia de aprendizaje según las necesidades específicas del estudiante.</p>
+            
+            <div class="settings-panel">
+                <div class="setting-option">
+                    <label>
+                        <input type="checkbox" id="dyslexic-font">
+                        <span>Usar fuente OpenDyslexic</span>
+                    </label>
+                </div>
+                
+                <div class="setting-option">
+                    <label>
+                        <input type="checkbox" id="audio-feedback" checked>
+                        <span>Retroalimentación auditiva</span>
+                    </label>
+                </div>
+                
+                <div class="setting-option">
+                    <label>
+                        <input type="checkbox" id="visual-aids" checked>
+                        <span>Ayudas visuales</span>
+                    </label>
+                </div>
+                
+                <div class="setting-option">
+                    <label for="font-size">Tamaño de fuente:</label>
+                    <select id="font-size">
+                        <option value="normal">Normal</option>
+                        <option value="large">Grande</option>
+                        <option value="x-large">Muy grande</option>
+                    </select>
+                </div>
+                
+                <div class="setting-option">
+                    <label for="contrast">Contraste:</label>
+                    <select id="contrast">
+                        <option value="normal">Normal</option>
+                        <option value="high">Alto contraste</option>
+                        <option value="dark">Modo oscuro</option>
+                    </select>
+                </div>
+                
+                <button class="btn" id="apply-settings">Aplicar configuración</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Programa Multisensorial de Apoyo - Diseñado para estudiantes con Dislexia, Disgrafía y Discalculia</p>
+            <p>© 2023 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
