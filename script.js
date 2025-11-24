@@ -1,30 +1,31 @@
-        // Datos para los ejercicios
+//  // Datos para los ejercicios - CORREGIDOS
         const dyslexiaData = {
             'letter-recognition': {
                 title: 'Reconocimiento de Letras',
                 items: [
-                    { target: 'A', options: ['A', 'V', 'H', 'F'] },
-                    { target: 'B', options: ['B', 'D', 'P', 'R'] },
-                    { target: 'C', options: ['C', 'O', 'G', 'Q'] },
-                    { target: 'D', options: ['D', 'B', 'P', 'Q'] },
-                    { target: 'E', options: ['E', 'F', 'B', 'L'] }
+                    { target: 'A', options: ['A', 'V', 'H', 'F', 'X'] },
+                    { target: 'B', options: ['B', 'D', 'P', 'R', 'C'] },
+                    { target: 'C', options: ['C', 'O', 'G', 'Q', 'H'] },
+                    { target: 'D', options: ['D', 'B', 'P', 'Q', 'I'] },
+                    { target: 'E', options: ['E', 'F', 'B', 'L', 'D'] },
+                    { target: 'F', options: ['X', 'F', 'E', 'R', 'J'] }
                 ]
             },
             'syllable-formation': {
                 title: 'Formación de Sílabas',
                 items: [
-                    { target: 'MA', options: ['MA', 'AM', 'ME', 'MO'] },
-                    { target: 'PA', options: ['PA', 'AP', 'PE', 'PO'] },
-                    { target: 'LA', options: ['LA', 'AL', 'LE', 'LO'] },
-                    { target: 'SA', options: ['SA', 'AS', 'SE', 'SO'] },
-                    { target: 'TA', options: ['TA', 'AT', 'TE', 'TO'] }
+                    { target: 'MA', options: ['MA', 'AM', 'ME', 'MO','MU'] },
+                    { target: 'PA', options: ['PA', 'AP', 'PE', 'PO','PI'] },
+                    { target: 'LA', options: ['LA', 'AL', 'LE', 'LO','LU'] },
+                    { target: 'SA', options: ['SA', 'AS', 'SE', 'SO','ES'] },
+                    { target: 'TA', options: ['TA', 'AT', 'TE', 'TO','OT'] }
                 ]
             },
             'word-building': {
                 title: 'Construcción de Palabras',
                 items: [
-                    { target: 'CASA', options: ['CASA', 'CASA', 'SACA', 'CASA'] },
-                    { target: 'MESA', options: ['MESA', 'SEMA', 'MASE', 'MESA'] },
+                    { target: 'CASA', options: ['CASA', 'COSA', 'SACA', 'CASO'] },
+                    { target: 'MESA', options: ['MESA', 'SEMA', 'MASE', 'MASO'] },
                     { target: 'GATO', options: ['GATO', 'TOGA', 'GOTA', 'GATO'] },
                     { target: 'LUNA', options: ['LUNA', 'NULA', 'ULNA', 'LUNA'] },
                     { target: 'SILLA', options: ['SILLA', 'SILLA', 'LISAS', 'SILLA'] }
@@ -36,31 +37,31 @@
             'letter-tracing': {
                 title: 'Trazo de Letras',
                 prompts: [
-                    'Escribe la letra "A" mayúscula',
-                    'Escribe la letra "m" minúscula',
-                    'Escribe la letra "R" mayúscula',
-                    'Escribe la letra "p" minúscula',
-                    'Escribe la letra "T" mayúscula'
+                    { prompt: 'Escribe la letra "A" mayúscula', answer: 'A' },
+                    { prompt: 'Escribe la letra "m" minúscula', answer: 'm' },
+                    { prompt: 'Escribe la letra "R" mayúscula', answer: 'R' },
+                    { prompt: 'Escribe la letra "p" minúscula', answer: 'p' },
+                    { prompt: 'Escribe la letra "T" mayúscula', answer: 'T' }
                 ]
             },
             'word-formation': {
                 title: 'Formación de Palabras',
                 prompts: [
-                    'Escribe la palabra: MESA',
-                    'Escribe la palabra: CASA',
-                    'Escribe la palabra: GATO',
-                    'Escribe la palabra: LUNA',
-                    'Escribe la palabra: SILLA'
+                    { prompt: 'Escribe la palabra: MESA', answer: 'MESA' },
+                    { prompt: 'Escribe la palabra: CASA', answer: 'CASA' },
+                    { prompt: 'Escribe la palabra: GATO', answer: 'GATO' },
+                    { prompt: 'Escribe la palabra: LUNA', answer: 'LUNA' },
+                    { prompt: 'Escribe la palabra: SILLA', answer: 'SILLA' }
                 ]
             },
             'visual-spelling': {
                 title: 'Ortografía Visual',
                 prompts: [
-                    'Escribe la palabra que representa esta imagen: 🏠 (CASA)',
-                    'Escribe la palabra que representa esta imagen: 🐱 (GATO)',
-                    'Escribe la palabra que representa esta imagen: 🌙 (LUNA)',
-                    'Escribe la palabra que representa esta imagen: 🪑 (SILLA)',
-                    'Escribe la palabra que representa esta imagen: 🍎 (MANZANA)'
+                    { prompt: 'Escribe la palabra que representa esta imagen: 🏠', answer: 'CASA' },
+                    { prompt: 'Escribe la palabra que representa esta imagen: 🐱', answer: 'GATO' },
+                    { prompt: 'Escribe la palabra que representa esta imagen: 🌙', answer: 'LUNA' },
+                    { prompt: 'Escribe la palabra que representa esta imagen: 🪑', answer: 'SILLA' },
+                    { prompt: 'Escribe la palabra que representa esta imagen: 🍎', answer: 'MANZANA' }
                 ]
             }
         };
@@ -69,11 +70,11 @@
             'number-recognition': {
                 title: 'Reconocimiento de Números',
                 problems: [
-                    { problem: '¿Qué número es este?', value: 5, options: [3, 5, 7, 9] },
-                    { problem: '¿Qué número es este?', value: 8, options: [6, 8, 10, 12] },
-                    { problem: '¿Qué número es este?', value: 12, options: [10, 12, 14, 16] },
-                    { problem: '¿Qué número es este?', value: 15, options: [13, 15, 17, 19] },
-                    { problem: '¿Qué número es este?', value: 20, options: [18, 20, 22, 24] }
+                    { problem: '¿Qué número es este?', display: '5', value: 5, options: [3, 5, 7, 9] },
+                    { problem: '¿Qué número es este?', display: '8', value: 8, options: [6, 8, 10, 12] },
+                    { problem: '¿Qué número es este?', display: '12', value: 12, options: [10, 12, 14, 16] },
+                    { problem: '¿Qué número es este?', display: '15', value: 15, options: [13, 15, 17, 19] },
+                    { problem: '¿Qué número es este?', display: '20', value: 20, options: [18, 20, 22, 24] }
                 ]
             },
             'basic-operations': {
@@ -103,6 +104,7 @@
         let currentExerciseIndex = 0;
         let correctAnswers = 0;
         let totalExercises = 0;
+        let currentMathAnswer = '';
 
         // Inicialización
         document.addEventListener('DOMContentLoaded', function() {
@@ -173,6 +175,9 @@
                 difficulty = 'dyscalculia';
                 exerciseArea = document.getElementById('dyscalculia-exercise');
                 data = dyscalculiaData[activityType];
+            } else {
+                console.error('Tipo de actividad no reconocido:', activityType);
+                return;
             }
             
             // Configurar la actividad
@@ -262,13 +267,13 @@
             }
         }
 
-        // Ejercicios para disgrafía
+        // Ejercicios para disgrafía - CORREGIDOS
         function startDysgraphiaExercise() {
             const data = dysgraphiaData[currentActivity];
-            const prompt = data.prompts[currentExerciseIndex];
+            const promptData = data.prompts[currentExerciseIndex];
             
             document.getElementById('dysgraphia-exercise-title').textContent = data.title;
-            document.getElementById('writing-prompt').textContent = prompt;
+            document.getElementById('writing-prompt').textContent = promptData.prompt;
             
             // Reiniciar elementos de UI
             document.getElementById('writing-input').value = '';
@@ -278,35 +283,16 @@
         }
 
         function checkWriting() {
-            const input = document.getElementById('writing-input').value.trim().toUpperCase();
-            const prompt = document.getElementById('writing-prompt').textContent;
+            const input = document.getElementById('writing-input').value.trim();
+            const promptData = dysgraphiaData[currentActivity].prompts[currentExerciseIndex];
             const feedback = document.getElementById('writing-feedback');
             
-            // Extraer la palabra objetivo del prompt (simplificado)
-            let targetWord = '';
-            if (prompt.includes('Escribe la palabra:')) {
-                targetWord = prompt.split(':')[1].trim();
-            } else if (prompt.includes('(CASA)')) {
-                targetWord = 'CASA';
-            } else if (prompt.includes('(GATO)')) {
-                targetWord = 'GATO';
-            } else if (prompt.includes('(LUNA)')) {
-                targetWord = 'LUNA';
-            } else if (prompt.includes('(SILLA)')) {
-                targetWord = 'SILLA';
-            } else if (prompt.includes('(MANZANA)')) {
-                targetWord = 'MANZANA';
-            } else {
-                // Para ejercicios de trazo de letras
-                targetWord = prompt.split('"')[1];
-            }
-            
-            if (input === targetWord) {
+            if (input.toUpperCase() === promptData.answer.toUpperCase()) {
                 feedback.textContent = '¡Excelente! Escritura correcta.';
                 feedback.className = 'feedback success';
                 correctAnswers++;
             } else {
-                feedback.textContent = `Intenta de nuevo. La forma correcta es: ${targetWord}`;
+                feedback.textContent = `Intenta de nuevo. La forma correcta es: ${promptData.answer}`;
                 feedback.className = 'feedback error';
             }
             
@@ -325,7 +311,7 @@
             }
         }
 
-        // Ejercicios para discalculia
+        // Ejercicios para discalculia - CORREGIDOS
         function startDyscalculiaExercise() {
             const data = dyscalculiaData[currentActivity];
             const problem = data.problems[currentExerciseIndex];
@@ -333,13 +319,24 @@
             document.getElementById('dyscalculia-exercise-title').textContent = data.title;
             document.getElementById('math-problem').textContent = problem.problem;
             
+            // Mostrar el número para reconocimiento numérico
+            const numberDisplay = document.getElementById('number-display');
+            if (currentActivity === 'number-recognition' && problem.display) {
+                numberDisplay.textContent = problem.display;
+                numberDisplay.style.display = 'block';
+                document.getElementById('math-problem').textContent = problem.problem;
+            } else {
+                numberDisplay.style.display = 'none';
+            }
+            
             // Configurar según el tipo de ejercicio
             if (currentActivity === 'number-recognition') {
                 setupNumberRecognition(problem);
             } else {
                 // Para operaciones básicas y problemas visuales
                 document.getElementById('number-pad').style.display = 'grid';
-                clearMathInput();
+                currentMathAnswer = '';
+                initNumberPad();
             }
             
             // Reiniciar elementos de UI
@@ -351,6 +348,7 @@
         function setupNumberRecognition(problem) {
             const numberPad = document.getElementById('number-pad');
             numberPad.innerHTML = '';
+            numberPad.style.display = 'grid';
             
             // Crear botones para las opciones
             problem.options.forEach(option => {
@@ -366,40 +364,63 @@
 
         function initNumberPad() {
             const numberPad = document.getElementById('number-pad');
-            numberPad.innerHTML = '';
             
-            // Crear teclado numérico del 1 al 9
-            for (let i = 1; i <= 9; i++) {
-                const btn = document.createElement('button');
-                btn.className = 'number-btn';
-                btn.textContent = i;
-                btn.addEventListener('click', function() {
-                    // Para ejercicios de operaciones básicas y problemas visuales
-                    const currentProblem = dyscalculiaData[currentActivity].problems[currentExerciseIndex];
-                    checkMathAnswer(i, currentProblem.answer);
+            // Solo inicializar si está vacío o para operaciones básicas/visuales
+            if (numberPad.children.length === 0 || currentActivity !== 'number-recognition') {
+                numberPad.innerHTML = '';
+                numberPad.style.display = 'grid';
+                
+                // Crear teclado numérico del 1 al 9
+                for (let i = 1; i <= 9; i++) {
+                    const btn = document.createElement('button');
+                    btn.className = 'number-btn';
+                    btn.textContent = i;
+                    btn.addEventListener('click', function() {
+                        handleNumberInput(i);
+                    });
+                    numberPad.appendChild(btn);
+                }
+                
+                // Botón para 0
+                const zeroBtn = document.createElement('button');
+                zeroBtn.className = 'number-btn';
+                zeroBtn.textContent = '0';
+                zeroBtn.addEventListener('click', function() {
+                    handleNumberInput(0);
                 });
-                numberPad.appendChild(btn);
+                numberPad.appendChild(zeroBtn);
+                
+                // Botón para enviar respuesta
+                const submitBtn = document.createElement('button');
+                submitBtn.className = 'number-btn';
+                submitBtn.textContent = '✓';
+                submitBtn.style.backgroundColor = 'var(--success)';
+                submitBtn.style.color = 'white';
+                submitBtn.addEventListener('click', function() {
+                    const currentProblem = dyscalculiaData[currentActivity].problems[currentExerciseIndex];
+                    checkMathAnswer(parseInt(currentMathAnswer) || 0, currentProblem.answer);
+                });
+                numberPad.appendChild(submitBtn);
             }
-            
-            // Botón para 0
-            const zeroBtn = document.createElement('button');
-            zeroBtn.className = 'number-btn';
-            zeroBtn.textContent = '0';
-            zeroBtn.addEventListener('click', function() {
-                const currentProblem = dyscalculiaData[currentActivity].problems[currentExerciseIndex];
-                checkMathAnswer(0, currentProblem.answer);
-            });
-            numberPad.appendChild(zeroBtn);
         }
 
-        function clearMathInput() {
-            // En una implementación más avanzada, aquí se limpiaría un campo de entrada
+        function handleNumberInput(number) {
+            currentMathAnswer += number.toString();
+            document.getElementById('math-problem').textContent = 
+                dyscalculiaData[currentActivity].problems[currentExerciseIndex].problem + ' ' + currentMathAnswer;
         }
 
         function checkMathAnswer(selected, correct) {
             const feedback = document.getElementById('math-feedback');
             
-            if (selected === correct) {
+            // Para number-recognition, selected ya es el número
+            // Para otras actividades, necesitamos usar currentMathAnswer
+            let answerToCheck = selected;
+            if (currentActivity !== 'number-recognition') {
+                answerToCheck = parseInt(currentMathAnswer) || 0;
+            }
+            
+            if (answerToCheck === correct) {
                 feedback.textContent = '¡Correcto!';
                 feedback.className = 'feedback success';
                 correctAnswers++;
@@ -415,6 +436,7 @@
 
         function nextDyscalculiaExercise() {
             currentExerciseIndex++;
+            currentMathAnswer = '';
             
             if (currentExerciseIndex < totalExercises) {
                 startDyscalculiaExercise();
@@ -437,23 +459,23 @@
         // Actualizar barra de progreso
         function updateProgress() {
             const progress = document.getElementById('progress');
-            const percentage = (currentExerciseIndex / totalExercises) * 100;
+            const percentage = ((currentExerciseIndex + 1) / totalExercises) * 100;
             progress.style.width = `${percentage}%`;
         }
 
         // Aplicar configuración de accesibilidad
         function applySettings() {
             const dyslexicFont = document.getElementById('dyslexic-font').checked;
-            const audioFeedback = document.getElementById('audio-feedback').checked;
-            const visualAids = document.getElementById('visual-aids').checked;
+            const audioFeedback = document.getElementById('audio-feedback');
+            const visualAids = document.getElementById('visual-aids');
             const fontSize = document.getElementById('font-size').value;
             const contrast = document.getElementById('contrast').value;
             
             // Aplicar fuente para dislexia
             if (dyslexicFont) {
-                document.body.style.fontFamily = '"Open Dyslexic", Arial, sans-serif';
+                document.body.classList.add('dyslexic-font');
             } else {
-                document.body.style.fontFamily = 'Arial, sans-serif';
+                document.body.classList.remove('dyslexic-font');
             }
             
             // Aplicar tamaño de fuente

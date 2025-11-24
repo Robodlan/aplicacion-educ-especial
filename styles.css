@@ -1,4 +1,4 @@
-:root {
+  :root {
             --primary: #4361ee;
             --secondary: #3a0ca3;
             --accent: #4cc9f0;
@@ -11,14 +11,14 @@
             --dysgraphia-bg: #f0fdf4;
             --dyscalculia-bg: #fef7cd;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Open Dyslexic', Arial, sans-serif;
+            font-family: Arial, sans-serif;
         }
-        
+
         body {
             background-color: var(--light);
             color: var(--dark);
@@ -30,7 +30,7 @@
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
@@ -220,6 +220,18 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
         
+        .number-display {
+            font-size: 4rem;
+            text-align: center;
+            margin: 1rem 0;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
         .number-pad {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -330,4 +342,13 @@
             .math-problem {
                 font-size: 2rem;
             }
+            
+            .number-display {
+                font-size: 3rem;
+                padding: 1.5rem;
+            }
+        }
+
+        .dyslexic-font {
+            font-family: 'Comic Sans MS', cursive;
         }
