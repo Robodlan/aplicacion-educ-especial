@@ -3,12 +3,12 @@
             'letter-recognition': {
                 title: 'Reconocimiento de Letras',
                 items: [
-                    { target: 'A', options: ['A', 'V', 'H', 'F', 'X'] },
-                    { target: 'B', options: ['B', 'D', 'P', 'R', 'C'] },
-                    { target: 'C', options: ['C', 'O', 'G', 'Q', 'H'] },
-                    { target: 'D', options: ['D', 'B', 'P', 'Q', 'I'] },
-                    { target: 'E', options: ['E', 'F', 'B', 'L', 'D'] },
-                    { target: 'F', options: ['X', 'F', 'E', 'R', 'J'] }
+                    { target: 'A', options: ['A', 'V', 'H', 'F', 'X','E'] },
+                    { target: 'B', options: ['B', 'D', 'P', 'R', 'C','Y'] },
+                    { target: 'C', options: ['C', 'O', 'G', 'Q', 'H','L'] },
+                    { target: 'D', options: ['D', 'B', 'P', 'Q', 'I','R'] },
+                    { target: 'E', options: ['E', 'F', 'B', 'L', 'D','Z'] },
+                    { target: 'F', options: ['X', 'F', 'E', 'R', 'J','A'] }
                 ]
             },
             'syllable-formation': {
