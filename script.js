@@ -3,7 +3,7 @@
             'letter-recognition': {
                 title: 'Reconocimiento de Letras',
                 items: [
-                    { target: 'A', options: ['B', 'V', 'A', 'F', 'X','E'] },
+                    { target: 'A', options: ['B', 'V', 'A', 'F', 'X',2] },
                     { target: 'B', options: ['H', 'D', 'P', 'B', 'C','Y'] },
                     { target: 'C', options: ['C', 'O', 'G', 'Q', 'H','L'] },
                     { target: 'D', options: ['D', 'B', 'P', 'Q', 'I','R'] },
