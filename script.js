@@ -4,8 +4,8 @@
                 title: 'Reconocimiento de Letras',
                 items: [
                     { target: 'A', options: ['B', 'V', 'A', 'F', 'X',2] },
-                    { target: 'B', options: ['H', 'D', 'P', 'B', 'C','Y'] },
-                    { target: 'C', options: ['C', 'O', 'G', 'Q', 'H','L'] },
+                    { target: 'B', options: ['H', 'D', 'P', 'B', 'C',6] },
+                    { target: 'C', options: ['C', 'O', 'G', 'Q', 'H',8] },
                     { target: 'D', options: ['D', 'B', 'P', 'Q', 'I','R'] },
                     { target: 'E', options: ['E', 'F', 'B', 'L', 'D','Z'] },
                     { target: 'F', options: ['X', 'F', 'E', 'R', 'J','A'] }
