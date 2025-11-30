@@ -3,22 +3,22 @@
             'letter-recognition': {
                 title: 'Reconocimiento de Letras',
                 items: [
-                    { target: 'A', options: ['B', 'V', 'A', 'F', 'X','E', 'I'] },
-                    { target: 'B', options: ['H', 'D', 'P', 'B', 'C','Y', 'Z'] },
-                    { target: 'C', options: ['C', 'O', 'G', 'Q', 'H','L', 'A'] },
-                    { target: 'D', options: ['D', 'B', 'P', 'Q', 'I','R', 'X'] },
-                    { target: 'E', options: ['E', 'F', 'B', 'L', 'D','Z', 'Y'] },
-                    { target: 'F', options: ['X', 'F', 'E', 'R', 'J','A', 'B'] }
+                    { target: 'A', options: ['B', 'V', 'A', 'F', 'X','E'] },
+                    { target: 'B', options: ['H', 'D', 'P', 'B', 'C','Y'] },
+                    { target: 'C', options: ['C', 'O', 'G', 'Q', 'H','L'] },
+                    { target: 'D', options: ['D', 'B', 'P', 'Q', 'I','R'] },
+                    { target: 'E', options: ['E', 'F', 'B', 'L', 'D','Z'] },
+                    { target: 'F', options: ['X', 'F', 'E', 'R', 'J','A'] }
                 ]
             },
             'syllable-formation': {
                 title: 'Formación de Sílabas',
                 items: [
-                    { target: 'MA', options: ['MA', 'AM', 'ME', 'MO','MU','AT'] },
-                    { target: 'PA', options: ['PA', 'AP', 'PE', 'PO','PI','OT'] },
-                    { target: 'LA', options: ['LA', 'AL', 'LE', 'LO','LU','PA'] },
-                    { target: 'SA', options: ['SA', 'AS', 'SE', 'SO','ES','SF'] },
-                    { target: 'TA', options: ['TA', 'AT', 'TE', 'TO','OT','TU'] }
+                    { target: 'MA', options: ['MA', 'AM', 'ME', 'MO','MU'] },
+                    { target: 'PA', options: ['PA', 'AP', 'PE', 'PO','PI'] },
+                    { target: 'LA', options: ['LA', 'AL', 'LE', 'LO','LU'] },
+                    { target: 'SA', options: ['SA', 'AS', 'SE', 'SO','ES'] },
+                    { target: 'TA', options: ['TA', 'AT', 'TE', 'TO','OT'] }
                 ]
             },
             'word-building': {
