@@ -14,7 +14,7 @@
             'syllable-formation': {
                 title: 'Formación de Sílabas',
                 items: [
-                    { target: 'MA', options: ['MA', 'AM', 'ME', 'MO','MU', 4] },
+                    { target: 'MA', options: ['MA', 'AM', 'ME', 'MO','MU', 'aceite'] },
                     { target: 'PA', options: ['PA', 'AP', 'PE', 'PO','PI'] },
                     { target: 'LA', options: ['LA', 'AL', 'LE', 'LO','LU'] },
                     { target: 'SA', options: ['SA', 'AS', 'SE', 'SO','ES'] },
