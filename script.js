@@ -14,11 +14,11 @@
             'syllable-formation': {
                 title: 'Formación de Sílabas',
                 items: [
-                    { target: 'MA', options: ['MA', 'AM', 'ME', 'MO','MU'] },
-                    { target: 'PA', options: ['PA', 'AP', 'PE', 'PO','PI'] },
-                    { target: 'LA', options: ['LA', 'AL', 'LE', 'LO','LU'] },
-                    { target: 'SA', options: ['SA', 'AS', 'SE', 'SO','ES'] },
-                    { target: 'TA', options: ['TA', 'AT', 'TE', 'TO','OT'] }
+                    { target: 'MA', options: ['MA', 'AM', 'ME', 'MO','MU','AT'] },
+                    { target: 'PA', options: ['PA', 'AP', 'PE', 'PO','PI','OT'] },
+                    { target: 'LA', options: ['LA', 'AL', 'LE', 'LO','LU','PA'] },
+                    { target: 'SA', options: ['SA', 'AS', 'SE', 'SO','ES','SF'] },
+                    { target: 'TA', options: ['TA', 'AT', 'TE', 'TO','OT','TU'] }
                 ]
             },
             'word-building': {
