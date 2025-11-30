@@ -24,7 +24,7 @@
             'word-building': {
                 title: 'Construcción de Palabras',
                 items: [
-                    { target: 'CASA', options: ['CASA', 'COSA', 'SACA', 'CASO'] },
+                    { target: 'CASA', options: ['CASA', 'COSA', 'SACA', 'CASe'] },
                     { target: 'MESA', options: ['MESA', 'SEMA', 'MASE', 'MASO'] },
                     { target: 'GATO', options: ['GATO', 'TOGA', 'GOTA', 'GATO'] },
                     { target: 'LUNA', options: ['LUNA', 'NULA', 'ULNA', 'LUNA'] },
