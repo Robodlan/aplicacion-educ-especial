@@ -3,18 +3,18 @@
             'letter-recognition': {
                 title: 'Reconocimiento de Letras',
                 items: [
-                    { target: 'A', options: ['B', 'V', 'A', 'F', 'X','aceite'] },
+                    { target: 'A', options: ['B', 'V', 'A', 'F', 'X',4] },
                     { target: 'B', options: ['H', 'D', 'P', 'B', 'C',6] },
                     { target: 'C', options: ['C', 'O', 'G', 'Q', 'H',8] },
-                    { target: 'D', options: ['D', 'B', 'P', 'Q', 'I','R'] },
-                    { target: 'E', options: ['E', 'F', 'B', 'L', 'D','Z'] },
+                    { target: 'D', options: ['D', 'B', 7, 'Q', 'I', 'b'] },
+                    { target: 'E', options: ['E', 'F', 'B', 4, 'D','Z'] },
                     { target: 'F', options: ['X', 'F', 'E', 'R', 'J','A'] }
                 ]
             },
             'syllable-formation': {
                 title: 'Formación de Sílabas',
                 items: [
-                    { target: 'MA', options: ['MA', 'AM', 'ME', 'MO','MU', ''] },
+                    { target: 'MA', options: ['MA', 'AM', 'ME', 'MO','MU'] },
                     { target: 'PA', options: ['PA', 'AP', 'PE', 'PO','PI'] },
                     { target: 'LA', options: ['LA', 'AL', 'LE', 'LO','LU'] },
                     { target: 'SA', options: ['SA', 'AS', 'SE', 'SO','ES'] },
@@ -28,7 +28,7 @@
                     { target: 'MESA', options: ['MESA', 'SEMA', 'MASE', 'MASO'] },
                     { target: 'GATO', options: ['GATO', 'TOGA', 'GOTA', 'GATO'] },
                     { target: 'LUNA', options: ['LUNA', 'NULA', 'ULNA', 'LUNA'] },
-                    { target: 'SILLA', options: ['SILLA', 'SILLA', 'LISAS', 'SILLA'] }
+                    { target: 'SILLA',options:['SILLA','SILLA','LISAS','SILLA'] }
                 ]
             }
         };
@@ -70,7 +70,7 @@
             'number-recognition': {
                 title: 'Reconocimiento de Números',
                 problems: [
-                    { problem: '¿Qué número es este?', display: '5', value: 5, options: [3, 5, 7, 9] },
+                    { problem: '¿Qué número es este?', display: '5', value: 5, options: [3, 5, 7, 9,] },
                     { problem: '¿Qué número es este?', display: '8', value: 8, options: [6, 8, 10, 12] },
                     { problem: '¿Qué número es este?', display: '12', value: 12, options: [10, 12, 14, 16] },
                     { problem: '¿Qué número es este?', display: '15', value: 15, options: [13, 15, 17, 19] },
