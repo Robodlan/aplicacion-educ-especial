@@ -24,11 +24,11 @@
             'word-building': {
                 title: 'Construcción de Palabras',
                 items: [
-                    { target: 'CASA', options: ['CASA', 'COSA', 'SACA', 'CASe'] },
-                    { target: 'MESA', options: ['MESA', 'SEMA', 'MASE', 'MASO'] },
-                    { target: 'GATO', options: ['GATO', 'TOGA', 'GOTA', 'GATO'] },
-                    { target: 'LUNA', options: ['LUNA', 'NULA', 'ULNA', 'LUNA'] },
-                    { target: 'SILLA',options:['SILLA','SILLA','LISAS','SILLA'] }
+                    { target: 'CASA', options: ['CASA', 'COSA', 'SACA', 'CASe','queso'] },
+                    { target: 'MESA', options: ['MESA', 'SEMA', 'MASE', 'MASO',8] },
+                    { target: 'GATO', options: ['GATO', 'TOGA', 'GOTA', 'GATE','GETE'] },
+                    { target: 'LUNA', options: ['LUNA', 'NULA', 'ULNA', 'SUMA','UVA'] },
+                    { target: 'SILLA',options:['SILLA','LILLA','LISAS','SILLAS','PILLAS'] }
                 ]
             }
         };
